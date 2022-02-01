@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right,#12c2e9, #c471ed, #f7797d);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+header h1 {
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+
+.input-field input {
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.input-field input::placeholder {
+    padding-left: 25px;
+    font-size: 20px;
+}
+
+.input-field input:focus {
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+.input-field button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.input-field button:hover {
+    opacity: 0.8;
+}
+
+.input-field {
+    display: flex;    
+}
+
+.tasks .task-header {
+    width: 530px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.tasks .task-header h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px;
+    color: whitesmoke;
+}
+
+.tasks .task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.tasks .task input {
+    height: 15px;
+    width: 15px;
+}
+
+.tasks .task input {
+    margin-left: 35px;
+}
+
+.tasks .task h4 {
+    max-width: 265px;
+    overflow: hidden;
+    font-size: 20px;
+    margin-left: 75px;
+    color: whitesmoke;
+}
+
+.tasks .task .actions {
+    margin-left: 50px;
+}
+
+.tasks .task .actions button {
+    width: 60x;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 10px;
+    cursor: pointer;  
+    padding: 0 10px;
+}
+
+.tasks .task .actions button:hover {
+    opacity: 0.8;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
